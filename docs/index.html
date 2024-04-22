@@ -6,84 +6,8 @@
     <title>MILA The Altruistic Token</title>
 
     <script src='https://terminal.jup.ag/main-v2.js'></script>
-
-    <style>
-        body, html {
-          height: 100%;
-          margin: 0;
-          font: 400 15px/1.8 "Lato", sans-serif;
-          color: #777;
-        }
-
-        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-          position: relative;
-          opacity: 0.65;
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-
-        }
-        .bgimg-1 {
-          background-image: url("./img/solana.jpeg");
-          min-height: 100%;
-        }
-
-        .bgimg-2 {
-          background-image: url("./img/heart1.jpeg");
-          background-repeat: repeat-x;
-          min-height: 400px;
-        }
-
-        .bgimg-3 {
-          background-image: url("./img/deco.jpeg");
-          min-height: 400px;
-        }
-
-        .bgimg-4 {
-          background-image: url("./img/solana_circuit.png");
-          min-height: 400px;
-        }
-
-        .caption {
-          position: absolute;
-          left: 0;
-          top: 50%;
-          width: 100%;
-          text-align: center;
-        }
-
-        .caption span.border {
-          border-radius: 20px;
-          background-color: #304256;
-          color: #fff;
-          padding: 18px;
-          font-size: 25px;
-          letter-spacing: 10px;
-        }
-
-        h3 {
-          letter-spacing: 5px;
-          text-transform: uppercase;
-          font: 20px "Lato", sans-serif;
-          color: #111;
-        }
-
-        #integrated-terminal {
-            margin: auto;
-            width: 20em;
-            padding: 10px;
-            border-radius: 20px;
-            background-color: #304256
-        }
-
-        /* Turn off parallax scrolling for tablets and phones */
-        @media only screen and (max-device-width: 1024px) {
-          .bgimg-1, .bgimg-2, .bgimg-3 {
-            background-attachment: scroll;
-          }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div class="bgimg-1">
@@ -103,7 +27,7 @@
     </div>
 
     <div style="position:relative;">
-      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
           <p>
               Traditional financial systems often neglect the needs of underserved and vulnerable populations, exacerbating social inequality and environmental degradation. Existing cryptocurrencies lack mechanisms for directly addressing these issues, highlighting the need for a new approach that integrates finance with social responsibility.
           </p>
@@ -124,12 +48,10 @@
       <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
           <p>Trade MILA on Jupiter Swap</p>
           <div id="integrated-terminal">
-            <!-- Add This 👇 -->
             <script>
                 window.Jupiter.init({
                     displayMode: "integrated",
                     integratedTargetId: "integrated-terminal",
-                    // 👇 REPLACE THIS WITH YOUR OWN HTTP PROVIDER ENDPOINT
                     endpoint: "https://18.232.178.219:8545",
                     formProps: {
                         fixedOutputMint: true,
@@ -144,7 +66,7 @@
 
     <div class="bgimg-4">
       <div class="caption">
-      <span class="border">Help Crypto Help The World</span>
+      <span class="border">Help MILA Help The World</span>
       </div>
     </div>
 </body>
